@@ -1,0 +1,147 @@
+#main{
+    display: flex;
+    width: 100%;
+    /* height: 1000px; */
+    /* border: 1px solid black; */
+}
+.type{
+    width: 30%;
+}
+.type>div{
+    padding: 15px;
+    cursor: pointer;
+    
+    /* border: 1px solid black; */
+}
+.container{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 10px;
+}
+#Arrivals{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    padding: 20px;
+}
+#Arrivals>div{
+    /* border: 1px solid black; */
+   text-align: center;
+   padding: 20px;
+}
+
+#Arrivals>div>img{
+    height: 400px;
+    width: 200px;
+}
+.text_type{
+    color: blue;
+    font-style: italic;
+}
+#Arrivals>div>button{
+    padding: 10px 70px 10px 70px;
+    
+    background-color: black;
+    color: white;
+}
+#Arrivals>div>button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+}
+#Arrivals>div>div>p{
+    color: gray;
+}
+.type a{
+    text-decoration: none;
+    color: black;
+}
+#mens_img{
+    width: 100%;
+}
+.red{
+    color: red;
+}
+#item_number{
+    text-align: right;
+}
+
+
+/* option are ther */
+#sortprice{
+    padding: 10px 20px 10px 20px;
+}
+#sortnmae{
+    padding: 10px 20px 10px 20px;
+}
+#priority{
+    padding: 10px 20px 10px 20px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#corner{
+    margin-top: 50px;
+    display: flex;
+    gap: 20px;
+    /* border: 1px solid black; */
+    
+}
+#filter_by{
+    /* border: 1px solid black; */
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    background-color: whitesmoke;
+}
+@media all and (min-width: 401px) and (max-width: 720px){
+    #mens_img{
+        width: 200%;
+    }
+    #Arrivals{
+        grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    }
+    .type{
+        width: 100%;
+    }
+    #Arrivals>div>img{
+        height: 350px;
+        width: 150px;
+    }
+}
+
+@media all and (min-width: 200px) and (max-width: 400px){
+    #mens_img{
+        width: 250%;
+    }
+    #Arrivals{
+        grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    }
+    .type{
+        width: 100%;
+    }
+    #Arrivals>div>img{
+        height: 350px;
+        width: 150px;
+    }
+}
+@media all and (min-width: 80px) and (max-width: 200px){
+    #mens_img{
+        width: 250%;
+    }
+    #Arrivals{
+        grid-template-columns: repeat(1,1fr);
+    grid-template-rows: auto;
+    }
+    .type{
+        width: 100%;
+    }
+    #Arrivals>div>img{
+        height: 350px;
+        width: 150px;
+    }
+}

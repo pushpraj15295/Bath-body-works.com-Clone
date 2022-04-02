@@ -1,0 +1,140 @@
+#FRAGRANCE_main_container{
+    text-align: center;
+    width: 90%;
+    /* height: 8000px; */
+     /* border:  1px solid black; */
+     margin: auto;
+}
+#FRAGRANCE{
+    font-size: 50px;
+}           
+        #FRAGRANCE_sub_container{
+            /* border:  1px solid black; */
+            width: 60%;
+            margin: auto;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: auto;
+            gap: 20px;
+        }
+        a{
+    text-decoration: none;
+    color: black;
+}
+#FRAGRANCE_sub_container>a>div{
+    border: 1px solid rgb(251, 244, 244);
+    /* background-color: rgb(243, 66, 96); */
+    width: 300px;
+}
+
+#FRAGRANCE_sub_container>a>div>h1{
+    color: rgb(254, 251, 251);
+}
+#FRAGRANCES_sub1{
+    width: 100%;
+    /* border:  1px solid black; */
+    margin: auto;
+    height: 40px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+   margin-top: 80px;
+}
+#FRAGRANCES_sub2{
+    margin-top: -30px;
+}
+#sarch{
+   /* text-align: right; */
+   margin-top: 60px;
+     /* border:  1px solid black; */
+     display: flex;
+}
+#sarch>div{
+    text-align: left;
+    /* border:  1px solid black; */
+}
+#sarch>div>p{
+  margin-bottom: -1px;
+}
+.fa-magnifying-glass{
+    font-size: 20px;
+    padding: 4px;
+   margin-left: -30px;
+}
+#sarch2{
+    width: 90%;
+    /* border:  1px solid black; */
+}
+#sarch3{
+    display: flex;
+}
+input{
+    font-size: 23px;
+   /* margin-bottom: 20px; */
+}
+#FRAGRANCES_sub_continent{
+    /* border:  1px solid black; */
+    width: 75%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 30px;
+    padding: 10px;
+}
+#FRAGRANCES_sub_continent>div{
+    /* border:  1px solid black; */
+    text-align: left;  
+}
+#footer_line{
+    background-color: black;
+    border: 1px solid black;
+}
+#footer_box{
+    text-align: left;
+    width: 60%;
+}
+#corner{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+/* fragrance finder */
+#CITRUS{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuJr2MvwciF0XUsmfxBl7QIEsLYXqfdG3Dmg&usqp=CAU);
+}
+#CITRUS:hover{
+   
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ48NAfbO_tWTcp0Ih80CbrzzjCSX50PYfhyw&usqp=CAU);
+}
+
+#FLORAL{
+ background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTveGBdncgLNdKnLyPc3DS04pIN13O9nW73SQ&usqp=CAU);
+}
+#FLORAL:hover{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSUko9pSZKwrI_YT9_XdyK2d9q-Qz-pvJY9ig&usqp=CAU);
+}
+#FRESH{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXXyu1jNWhcRAeLFtrfiJGaefr7OW5pKuyBg&usqp=CAU);
+}
+#FRESH:hover{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWJcu1xSLugb7RBIc4UZx8ENeCaB-h1jvGgQ&usqp=CAU);
+}
+#FRUITY{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGzaJgtP-mhOw3l_pLv2_sOWlH1I04aoMX4Q&usqp=CAU)
+}
+#FRUITY:hover{
+background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTl7rbn3AW4K6lt9WVHV_Wu_HBQ24FkCLzg9A&usqp=CAU);
+}
+#SWEET{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRopMOxFyy-WNfEVapNkYmq0nEMGch-2wO0BA&usqp=CAU);
+}
+#SWEET:hover{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTnZJ5UKzb7RE6oKnTONOlIvXxD7bWyYooQg&usqp=CAU);
+}
+#WOODSY{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLuzUY-UmucHodb_fQwh_gn045t_fSwlxyLA&usqp=CAU);
+}
+#WOODSY:hover{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOUwzUAkpFQhF66KTjOnZaffvqlaMBzrDchA&usqp=CAU);
+}

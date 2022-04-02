@@ -762,7 +762,9 @@ outlookdata=[]
 function addTobag(ele){
     // console.log(ele)
     bag.push(ele)
+    alert("add to bag")
     localStorage.setItem("addTobag",JSON.stringify(bag))
+    window.location.reload()
 }
 
 </script>

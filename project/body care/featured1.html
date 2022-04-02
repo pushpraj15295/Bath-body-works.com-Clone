@@ -705,7 +705,9 @@ var bag=JSON.parse(localStorage.getItem("addtobag"))  ||  []
 function addtobag(elem){
     bag.push(elem)
 
+    alert("add to bag")
     localStorage.setItem("addTobag",JSON.stringify(bag))
+    window.location.reload()
 }
 
 var checkbag=[];

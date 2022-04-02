@@ -165,7 +165,9 @@ cursor:pointer;
          function addtobag(elem){
     bag.push(elem)
 
+    alert("add to bag")
     localStorage.setItem("addTobag",JSON.stringify(bag))
+    window.location.reload()
 }
 
 

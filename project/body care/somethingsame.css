@@ -219,9 +219,190 @@
 }
 
 
+
+
+
+#collectionofthings{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:40px;
+}
+#mainpage>p{
+    display:inline;
+    margin-left:10px;
+}
+#div-2>#smalldiv{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:-25px;
+}
+#div-2>#smalldiv>#first>h1{
+   
+        color:#666;
+        
+        margin-bottom:-18px;
+       
+        font-size: 24px;
+            font-family: Trade Gothic W01 Light,Arial,sans-serif;
+            font-weight: 100;
+}
+#div-2>#smalldiv>#foritems>p{
+    margin-top:25px;
+    margin-right:20px;
+    font-size:18px;
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    color:#666;
+}
+#div-2>#onlyforthis{
+    color:#666;
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-size:13px;
+}
+#div-2>#filterbag{
+    display : flex; justify-content:space-between;
+}
+
+#div-2>#filterbag>#filterdiv{
+    display:flex;
+    justify-content:space-between;
+    background-color: #edecec;
+    margin-top:18px;
+    margin-bottom:60px;
+    padding-left:20px;
+    padding-right:-25px;
+    padding-bottom:10px;
+}
+#div-2>#filterbag>#filterdiv>div{
+    margin-top:10px;
+    margin-right:70px;
+    margin-left:25px;
+}
+#div-2>#filterbag>#filterdiv>div>select{
+    padding:10px;
+    font-weight:bold;
+}
+#div-2>#filterbag>#filterdiv>p{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    font-weight:bold;  
+}
+#div-2>#filterbag>#sortdiv>select{
+    padding:10px 30px;
+    margin-top:23px;
+    font-weight:bold;
+    font-size:18px;
+}
+
+.imgdecorate{
+  height:300px ;
+  width:60%;
+  cursor:pointer;
+ margin-left:60px;
+}
+.italicstyle{
+   
+   font-size: .875rem;
+    color: #005699;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+   font-style:italic;
+    text-align: center ;
+    font-weight: bold;
+    
+    
+}
+.createname{
+    font-size:14px;
+    color: #333333;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+    line-height: 1;
+    text-align: center;
+    font-weight:bold;;
+    margin-top:-7px;
+}
+.createtypename{
+    font-size:13px;
+    color: #666666;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+   
+    text-align: center;
+    margin-top:-7px;
+
+}
+.resizeprice
+{
+    font-size:19px;
+    color: black;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+    line-height: 1;
+    text-align: center;
+   
+}
+.retagline{
+    font-size:12px;
+    color: #CC0000;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+    line-height: 1;
+    text-align: center;
+  display:block;
+    text-decoration:none; 
+cursor:pointer;
+}
+.Addingbag{
+    color:#FFFFFF;
+    font-size:13px;
+    background-color:#333;
+padding:10px 80px;
+border:none;
+text-align:center;
+margin-top:14px;
+}
+.Addingbag:hover{
+color:#333333;
+background-color:#eae8e8;
+cursor:pointer;
+
+ }
+
+ #lastpara{
+    height:2px;
+    background-color:#313030;
+    border:none;
+    margin-top:30px;
+}
+
+ #paradiv{
+    width:74%;
+}
+#paradiv>h2{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    margin-top:35px;
+    color:#333333 
+  
+}
+#paradiv>p{
+    font-family: Trade Gothic W01 Light,Arial,sans-serif;
+    color:#666666;
+    margin-top: 16px;
+    font-weight:1;
+    line-height: 1.75; 
+}
+#paradiv>p>a{
+    text-decoration:underline;
+    color: #333333;
+}
+#paradiv>p>a:hover{
+    text-decoration:none;
+}
+
+
+ 
+
+
+
+
 /* ******footter*** */
 
 #foot{
+    
     margin: auto;
     width: 76%;
     height: 300px;
@@ -479,180 +660,3 @@ color:#000;
      padding-right: 340px;
  }
 }
-
-
-
-
-#collectionofthings{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    gap:40px;
-}
-#mainpage>p{
-    display:inline;
-    margin-left:10px;
-}
-#div-2>#smalldiv{
-    display:flex;
-    justify-content:space-between;
-    margin-bottom:-25px;
-}
-#div-2>#smalldiv>#first>h1{
-   
-        color:#666;
-        
-        margin-bottom:-18px;
-       
-        font-size: 24px;
-            font-family: Trade Gothic W01 Light,Arial,sans-serif;
-            font-weight: 100;
-}
-#div-2>#smalldiv>#foritems>p{
-    margin-top:25px;
-    margin-right:20px;
-    font-size:18px;
-    font-family: Trade Gothic W01 Light,Arial,sans-serif;
-    color:#666;
-}
-#div-2>#onlyforthis{
-    color:#666;
-    font-family: Trade Gothic W01 Light,Arial,sans-serif;
-    font-size:13px;
-}
-#div-2>#filterbag{
-    display : flex; justify-content:space-between;
-}
-
-#div-2>#filterbag>#filterdiv{
-    display:flex;
-    justify-content:space-between;
-    background-color: #edecec;
-    margin-top:18px;
-    margin-bottom:60px;
-    padding-left:20px;
-    padding-right:-25px;
-    padding-bottom:10px;
-}
-#div-2>#filterbag>#filterdiv>div{
-    margin-top:10px;
-    margin-right:70px;
-    margin-left:25px;
-}
-#div-2>#filterbag>#filterdiv>div>select{
-    padding:10px;
-    font-weight:bold;
-}
-#div-2>#filterbag>#filterdiv>p{
-    font-family: Trade Gothic W01 Light,Arial,sans-serif;
-    font-weight:bold;  
-}
-#div-2>#filterbag>#sortdiv>select{
-    padding:10px 30px;
-    margin-top:23px;
-    font-weight:bold;
-    font-size:18px;
-}
-
-.imgdecorate{
-  height:300px ;
-  width:60%;
-  cursor:pointer;
- margin-left:60px;
-}
-.italicstyle{
-   
-   font-size: .875rem;
-    color: #005699;
-    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
-   font-style:italic;
-    text-align: center ;
-    font-weight: bold;
-    
-    
-}
-.createname{
-    font-size:14px;
-    color: #333333;
-    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
-    line-height: 1;
-    text-align: center;
-    font-weight:bold;;
-    margin-top:-7px;
-}
-.createtypename{
-    font-size:13px;
-    color: #666666;
-    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
-   
-    text-align: center;
-    margin-top:-7px;
-
-}
-.resizeprice
-{
-    font-size:19px;
-    color: black;
-    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
-    line-height: 1;
-    text-align: center;
-   
-}
-.retagline{
-    font-size:12px;
-    color: #CC0000;
-    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
-    line-height: 1;
-    text-align: center;
-  display:block;
-    text-decoration:none; 
-cursor:pointer;
-}
-.Addingbag{
-    color:#FFFFFF;
-    font-size:13px;
-    background-color:#333;
-padding:10px 80px;
-border:none;
-text-align:center;
-margin-top:14px;
-}
-.Addingbag:hover{
-color:#333333;
-background-color:#eae8e8;
-cursor:pointer;
-
- }
-
- #lastpara{
-    height:2px;
-    background-color:#313030;
-    border:none;
-    margin-top:30px;
-}
-
- #paradiv{
-    width:74%;
-}
-#paradiv>h2{
-    font-family: Trade Gothic W01 Light,Arial,sans-serif;
-    margin-top:35px;
-    color:#333333 
-  
-}
-#paradiv>p{
-    font-family: Trade Gothic W01 Light,Arial,sans-serif;
-    color:#666666;
-    margin-top: 16px;
-    font-weight:1;
-    line-height: 1.75; 
-}
-#paradiv>p>a{
-    text-decoration:underline;
-    color: #333333;
-}
-#paradiv>p>a:hover{
-    text-decoration:none;
-}
-
-
- 

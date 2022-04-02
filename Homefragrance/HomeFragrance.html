@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fullbody{
+            display: grid;
+            grid-template-columns: 12% 88%;
+            /* border: 1px solid; */
+        }
+        #sidebar{
+            /* border: 1px solid;    */
+        }
+        #sidebar>div{
+            justify-content: center;
+            margin-left: 20px;
+            cursor: pointer;
+        }
+        #body{
+            /* border: 1px solid; */
+            justify-content: space-around;
+            
+        }
+        #body>div{
+            width: 90%;
+            /* border: 1px solid; */
+            margin-left: 4%;
+            /* height: 500px; */
+            
+        }
+        hr{
+            
+            border-top: 1px solid black;
+           
+            
+        }
+        #imghomefragrance{
+            width: 100%;
+            height: 180px;
+
+        }
+        #imghomefragrance>img{
+            width: 100%;
+            height: 110px;
+            margin-top: 30px;
+        }
+        #product{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 1px;
+            justify-content:space-around;
+            
+        }
+        #product>div>img{
+            height: 267px;
+            width: 100%;
+            margin-top: 40px;
+            cursor: pointer;
+            
+        }
+        .btn1>button{
+            cursor: pointer;
+            margin-left: 15%;
+            width:200px ;
+            height: 35px;
+    
+            
+        }
+        .btn1>button{
+            background-color: white;
+            color: black;
+        }
+        .btn1>button:hover{
+            background-color: black;
+            color: white;
+        }
+        .btn1{
+            width: 100%;
+        }
+        .selection{
+            margin-top: 30px;
+            cursor: pointer;
+            
+        }
+        .selection:hover{
+            border: dotted;
+        }
+        .selection>img{
+        
+            width: 100%;
+        }
+        #end{
+            margin-top: 190px;
+        }
+        #para>p{
+            width: 70%;
+            margin-left: 30px;
+        }   
+        #head>h2{
+            margin-left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div id="fullbody">
+        <div id="sidebar">
+            <div>
+                <h4>TOP OFFER</h4>
+                <p> <a href="https://www.bathandbodyworks.com/c/home-fragrance/all-wallflowers?pb=_smptest" style="color: black;text-decoration: none;">$3.95 WallFlowers Fragrance refiles</a></p>
+                <p>2/$22 single Wick Candles</p>
+                <p>3/$ Room Sprays</p>
+                <p>3/$10 Car Fragrance Refilles</p>
+            </div>
+            <div>
+                <h4>FEATURED</h4>
+                <p>New Home Fragrance</p>
+                <p>The white Barn Shop</p>
+                <p>Auto Refresh Wallflowers</p>
+            </div>
+            <div>
+                <h4>CANDLES</h4>
+                <p>All Candles</p>
+                <p>3-Wick Candles</p>
+                <p>Single Wick Candels</p>
+                <p>Candle Holders & Accessories</p>
+            </div>
+            <div>
+                <h4>AIR FRESHENERS</h4>
+                <p>All Wallflowers</p>
+                <p>Wallflowers Plugs</p>
+                <p>Wallflowers refiles</p>
+                <p>Room Sprays & Mists</p>
+                <p>Car Fragrance</p>
+                
+            </div>
+            
+
+        </div>
+        <div id="body">
+            <div>
+                <h1>Home Fragrance</h1>
+            
+                <hr>
+                <div id="imghomefragrance">
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwc1aec2fe/images/Spring2022/xcat_homefrag_0_sp1_mlb.jpg?yocs=o_s_" alt="">
+                </div>
+            </div>
+            <div style="display:flex; margin-top: 5px;">
+                <div style="width: 42%;"><hr></div>
+                <div style="letter-spacing: 2px;">SHOP BY CATEGORY</div>
+                <div style="width: 42%;"><hr></div>
+            </div>
+
+           
+            <div id="product">
+                <div>
+                    <!-- <a href="candel.html"> -->
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw6477f549/images/Spring2022/cndl_allcndl-tropicals_sp2_vn.jpg?yocs=o_s_" alt="">
+                    <div class="btn1">
+                        <button> <a href="candel.html" style="text-decoration: none;;">CANDLES</a></button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwc9328827/images/Spring2022/diff_wf-core_0_jansas_vn.jpg?yocs=o_s_" alt="">
+                    <div class="btn1">
+                        <button><a href="Wallflowersdata.html" style="text-decoration: none;"> WALLFLOWERS</a></button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dwfa2317a9/images/Spring2022/diff_crs_0_sp1_vn.jpg?yocs=o_s_" alt="">
+                    <div class="btn1">
+                        <button><a href="wickescandeldata.html" style="text-decoration: none;">ROOM SPRAYS</a></button>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw67e2d77a/images/Spring2022/diff_car_0_sp1_vn.jpg?yocs=o_s_" alt="">
+                    <div class="btn1">
+                        <button><a href="https://www.bathandbodyworks.com/c/home-fragrance/car-fragrance?pb=_smptest" style="text-decoration: none; color: black;"> CAR FRAGRANCE</a></button>
+                    </div>
+                </div>
+            </div>
+            <div class="selection">
+                <img src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/-/Sites-BathAndBodyWorks-Library/default/dw971c499c/images/Spring2022/xcat_oasis-preview-home_sp3_mlb.jpg?yocs=o_s_" alt="">
+            </div>
+            <div id="head">
+                <h2>About Home Fragrance from Bath & Body Works</h2>
+            </div>
+            <div id="para">
+                <p>Nothing’s better than walking into a room that smells amazing. From the World’s Best 3-Wick Candles to always-on Wallflowers and more – we have so many ways to fill your house (and heart) with wonderful fragrance.</p>
+                <p>Change the ambiance (and scent) of your home in an instant with a Bath & Body Works 3-wick candle. From relaxing days to cozy nights and everything in between, our candles are basically perfect for every occasion. (Hello, fragrant wonderland.) With up to 45 hours of room-filling fragrance and over 50 exclusive scents, our candles are clearly iconic faves. Don’t forget to pick up a single wick candle (or two) for every room or as the perfect housewarming.</p>
+                <p>Now that candles are covered, what about always-on fragrance? Enter our Wallflowers refills and plugs. In a few simple steps, you’ll have up to 30 days of effortless fragrance. One: pick a Wallflowers plug that matches your home décor or the seasonal vibe. Two: grab a few Wallflowers refills in your favorite fragrances (or try some new ones). Three: plug in and enjoy – it’s as easy as that.</p>
+                <p>P.S. Hosting a party? Having guests over on short notice? You’re definitely going to need our concentrated room sprays. With two quick bursts, the room will be instantly refreshed. Plus, with every kind of scent you could want (think sweet treats, fresh fruits, woodsy, etc.) you’ll want to grab a few for every room.</p>
+                <p>Have a housewarming party to go to soon? Our gifts for home page is the best place to start. Happy shopping!</p>
+            </div>
+            <div id="end">
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+

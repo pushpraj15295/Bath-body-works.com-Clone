@@ -605,7 +605,7 @@ var gift_data=[
 ];
 
 
-var cartData=JSON.parse(localStorage.getItem("cart"))||[];
+var cartData=JSON.parse(localStorage.getItem("addTobag"))||[];
 
 window.addEventListener("load",function(){
     displayData(gift_data)
@@ -709,7 +709,9 @@ document.querySelector("#container").append(box);
    function addToCart(elem){
        cartData.push(elem);
        gift_data.push(elem);
-       localStorage.setItem("cart",JSON.stringify(cartData));
+       alert("added to bag");
+       localStorage.setItem("addTobag",JSON.stringify(cartData));
+       window.location.reload();
 
    }
    document.querySelector("#siign").addEventListener("click", myfun)

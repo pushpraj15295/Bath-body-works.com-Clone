@@ -583,7 +583,7 @@ var gelnourishing_data=[
         tagline:"Mix & Match 6/$27 or 4/$20",
     }, 
 ]
-var cartData=JSON.parse(localStorage.getItem("cart"))||[];
+var cartData=JSON.parse(localStorage.getItem("addTobag"))||[];
 
 window.addEventListener("load",function(){
     displayData(gelnourishing_data)
@@ -687,7 +687,9 @@ document.querySelector("#container").append(box);
    function addToCart(elem){
        cartData.push(elem);
        gelnourishing_data.push(elem);
-       localStorage.setItem("cart",JSON.stringify(cartData));
+       alert("added to bag");
+       localStorage.setItem("addTobag",JSON.stringify(cartData));
+       window.location.reload();
 
    }
 

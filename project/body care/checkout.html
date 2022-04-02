@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkthings</title>
+   
+    <style>
+        #container{
+            width:80%;
+           display:flex;
+           justify-content:space-between;
+           margin-top:80px;
+           margin-left:200px;
+        }
+        #container>#detail{
+            margin-top:300px;
+            border : solid red
+        }
+        #container>div>ul>li{
+            color:rgb(13, 83, 59);
+            font-size:40px;
+        }
+        #container>div>p{
+            font-size:40px;
+        }
+        .italicstyle{
+   
+   font-size:33px;
+    color: #005699;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+   font-style:italic;
+    text-align: center ;
+    font-weight: bold;
+    
+    
+}
+.createname{
+    font-size:34px;
+    color: #333333;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+    line-height: 1;
+    text-align: center;
+    font-weight:bold;
+    margin-top:-7px;
+}
+.createtypename{
+    font-size:33px;
+    color: #666666;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+   
+    text-align: center;
+    margin-top:-7px;
+
+}
+.resizeprice
+{
+    font-size:39px;
+    color: black;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+    line-height: 1;
+    text-align: center;
+   
+}
+.retagline{
+    font-size:32px;
+    color: #CC0000;
+    font-family: TradeGothicLTW05-BoldObl,Arial,sans-serif;
+    line-height: 1;
+    text-align: center;
+  display:block;
+    text-decoration:none; 
+cursor:pointer;
+}
+.Addingbag{
+    color:#FFFFFF;
+    font-size:33px;
+    background-color:#333;
+padding:10px 80px;
+border:none;
+text-align:center;
+margin-top:45px;
+}
+.Addingbag:hover{
+color:#333333;
+background-color:#eae8e8;
+cursor:pointer;
+
+ }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+       <div id="a"></div>
+       <div id="b"></div>
+       <div><p>How do you want to buy it? 
+           <hr>
+           <p>You can choose anyone.</p>
+           <ul>
+               <li>Online</li>
+               <p>Or</p>
+               <li>Offline(from store)</li>
+           </ul>
+       </p></div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    var thingsdetail=JSON.parse(localStorage.getItem("checkout"))
+
+      thingsdetail.map(function(elem){
+          var box2=document.createElement("div")
+           var box=document.createElement("div")
+           
+           var img=document.createElement("img")
+           img.src=elem.url
+          
+          
+
+           var type1=document.createElement("p")
+           type1.innerText=elem.type
+           type1.setAttribute("class","italicstyle")
+           
+           var name1=document.createElement("p")
+           name1.innerText=elem.name
+          name1.setAttribute("class","createname")
+
+           var nametype=document.createElement("p")
+           nametype.innerText=elem.type_name
+           nametype.setAttribute("class","createtypename")
+
+           var price1=document.createElement("p")
+           price1.innerText="$"+elem.price
+           price1.setAttribute("class","resizeprice")
+
+           var tagline1=document.createElement("a")
+           tagline1.href="checkout.html "
+           tagline1.innerText=elem.tagline
+           tagline1.setAttribute("class","retagline")
+
+           var btn=document.createElement("button")
+           btn.innerText="ADD TO BAG"
+           btn.setAttribute("class","Addingbag")
+           btn.addEventListener("click", function(){
+               addtobag(elem)
+           })
+
+           box2.append(img)         
+           box.append(type1,name1,nametype,price1,tagline1,btn);
+
+          
+
+           document.querySelector("#container>#a").append(box2);
+           document.querySelector("#container>#b").append(box);
+            
+
+      
+         })
+
+
+         function addtobag(elem){
+    bag.push(elem)
+
+    localStorage.setItem("addTobag",JSON.stringify(bag))
+}
+
+
+</script>

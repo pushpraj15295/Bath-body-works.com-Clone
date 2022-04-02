@@ -1,0 +1,52 @@
+#newnoe_main{
+    display: flex;
+    width: 100%;
+   
+}
+.newnoe_type{
+    width: 30%;
+}
+.newnoe_type>div{
+    padding: 15px;
+    cursor: pointer;
+    /* border: 1px solid black; */
+}
+.newnoe_container{
+    /* border: 1px solid black; */
+    width: 100%;
+    padding: 10px;
+}
+.newnoe_type a{
+    text-decoration: none;
+    color: black;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#corner{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+@media all and (min-width: 401px) and (max-width: 720px){
+    .newnoe_container>img{
+        /* width: 50%; */
+        width: 150%;
+    }
+    .newnoe_container>div>a>img{
+        width: 150%;
+    }
+}
+
+
+@media all and (min-width: 81px) and (max-width: 400px){
+    .newnoe_container>img{
+        /* width: 50%; */
+        width: 150%;
+    }
+    .newnoe_container>div>a>img{
+        width: 150%;
+    }
+}

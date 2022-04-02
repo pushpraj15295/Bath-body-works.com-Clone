@@ -1,0 +1,95 @@
+#Getinspired_maindiv{
+    width: 76%;
+    /* height: 8000px; */
+    /* border:  1px solid black; */
+    margin: auto;
+    text-align: center;
+    padding-top: 40px;
+    padding: 20px;
+}
+#Getinspired_2nd{
+    /* border:  1px solid black; */
+    width: 70%;
+    height: 200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+}
+#Getinspired_2nd>div{
+    /* border:  1px solid black; */
+    
+    text-align: center;
+    justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+#FEATURED{
+    text-align: left;
+}
+hr{
+    color: black;
+    background-color: black;
+    height: 3px; 
+}
+#FEATURED_box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20px;  
+}
+#FEATURED_box>a>div{
+    text-align: left;
+    /* border:  1px solid black; */
+}
+#FEATURED_box>a>div>img{
+    height: 300px;
+    width: 100%;
+}
+#FEATURED_box>a>div>p{
+    color: gray;
+}
+#FEATURED_box>a>div>div{
+   /* border: 1px solid black; */
+   text-align: right;
+}
+#FEATURED_box>a>div>div>button{
+   
+    padding: 10px 40px 10px 40px;
+    background-color: black;
+    color: white;
+}
+#FEATURED_box>a>div>div>button:hover{
+    background-color: white;
+    color: black;
+}
+#bodycare{
+    text-align: left;
+    display: flex;
+     /* border: 1px solid black; */
+     padding-top: 30px;
+}
+#bodycare>img{
+    height: 50px;
+    /* width: 50px; */
+}
+#show_more{
+   text-align: center;
+   margin-top: 60px;
+}
+#show_more>button{
+padding: 15px 80px 15px 80px;
+border: 3px solid black;
+background-color: white;
+}
+#show_more>button:hover{
+   cursor: pointer;
+   background-color: rgb(245, 237, 237);
+   border: none;
+}
+#corner{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}

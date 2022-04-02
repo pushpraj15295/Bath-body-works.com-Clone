@@ -1,0 +1,1032 @@
+/* ********TOP BAR CSS******** */
+
+#topbar
+{  
+    width: 100%;
+    height: 30px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:rgb(211, 202, 202);
+    float: right;
+}
+#innervbar
+{
+   display:flex; 
+   
+}
+#innervbar>i 
+{
+    padding-left:250px;
+    padding-right: 20px;
+    padding-top: 6px;
+}
+
+#innervbar p {
+    margin-top:-0.5px;
+    padding-top: 6px;
+}
+#innervbar>a
+{
+    text-decoration: underline;
+    padding-top: 4px;
+    
+}
+#innervbar>a:hover
+{
+    text-decoration:none;
+}
+.fa-location-dot
+{   
+    color:mediumvioletred;
+}
+
+@media only screen and (min-width: 50px) and (max-width:1435px)
+{
+   #topbar {
+
+    background-color:white;
+    float: left;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:35px;
+    
+    
+   }
+    #innervbar
+   {
+      margin: 0;
+      padding: 0;
+   
+   }
+   #innervbar i
+   {
+     padding: 0;
+     padding-left: 10px;
+     padding-right: 8px;
+     padding-top:4px;
+   }
+   #innervbar p
+   {
+      margin-left: 5px;
+      margin-top:0px;
+      margin-right: 8px;;
+      
+   }
+   #innervbar>a
+  {
+    
+    margin-left: 0%;
+    
+  }
+}
+
+
+/* ****************naV BAR CSS****************** */
+
+#navbar
+{   
+    width: 100%;
+    height:100px;
+    background-color:#ffffff;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+    
+    
+}
+#navbar div>a>h1 {
+
+    font-size: 50px;
+    font-weight: 300;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#05599b;
+
+}
+#srch {
+    color:#05599b;
+    height: 15px;
+    width: 15px;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top: 7.4px;
+    padding-right: 2px;
+    padding-bottom: 13.7px;
+}
+#search
+{   
+   
+   border: none;
+   border-top: 1px solid;
+    border-bottom: 1px solid; 
+    border-left: 1px solid;
+    padding-top: 9px;
+    padding-bottom:11px;
+    font-weight: 200;
+    margin-left: 9px;
+    padding-left: 10px;
+    padding-right: 100px;
+}
+#centerdiv
+{
+  margin-top:-50px;
+}
+
+
+
+#Big
+{
+    display:flex;
+    float:right;
+    
+}
+
+#Big img
+{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+    padding-top:-5px;
+    cursor: pointer;
+}
+#con
+{
+    padding-top: 18px;
+    padding-right: 35px;
+    cursor: pointer;
+}
+.fa-cart-arrow-down
+{
+    color:teal;
+}
+
+@media only screen and (min-width: 50px) and (max-width:1435px){
+
+    #navbar
+    {
+        margin-top:-50px;
+        padding-bottom: 56px;
+        width: 100%;
+        height: auto;
+        display:grid;
+       grid-template-columns: repeat(1,1fr);
+       grid-template-rows: auto;
+    }
+    #navbar div>a>h1 {
+
+        font-size: 35px;
+        font-weight: 500;
+        padding-bottom: 15px;
+        margin-top: -20px;
+        border-bottom: 3px solid #dde2e6;
+    }
+    #srch {
+        height: 15px;
+        width: 15px;
+        border: none;
+       float: left;
+       font-size:23px;
+       padding:0;
+       margin-top: -103px;
+       margin-left: 40px;
+    }
+    #search
+    {   
+       
+       border: none;
+       text-decoration: none;
+        font-size: 0;
+    }
+    #Big
+    {
+        margin-top:-120px;
+    }
+    
+    #Big img
+    {
+        width: 40px;
+        height: 40px;
+       
+    }
+        #con
+    {
+       font-size: 12px;
+       margin-top:-8px;
+       padding-right: -5px;
+    }
+
+}
+
+/***********+++++++*************** drop down menu Css*******++++++****** */
+
+
+
+
+#menu 
+
+{   width: 90%;
+     margin-left: 50px;
+    margin: 0 auto; 
+    margin-top: -40px; 
+    margin-bottom:10px;
+    /* border: 1px solid black; */
+
+}
+
+#menu>ul
+ {
+
+    background:white;
+}
+#menu ul
+{
+    list-style: none;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    float: left;
+}
+#menu ul a 
+{
+
+    text-decoration: none;
+    line-height:30px;
+    padding: 0px 35px;
+    font-weight:300;
+    font-size: 15px;
+    color:rgb(19, 11, 11);
+    display:block;
+}
+
+#menu ul li {
+
+    float: left;
+    position:relative;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+}
+
+#menu ul ul {
+   position:absolute ;
+   background:whitesmoke;
+   top: 100;
+   left: 0;
+   display:none;
+}
+#menu ul ul li {
+
+    float:left;
+    width:250px;
+}
+
+
+#menu ul ul ul
+{
+    top: 0;
+    left: 100;
+}
+#menu ul li:hover > ul {
+
+    display: block;
+}
+#menu>ul>li>a:hover
+{
+    border-bottom: 2px solid #04599b;
+    border-left: none;
+}
+#menu ul li:hover {
+
+    border-left: 2px solid rgb(24, 24, 119);
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    
+    #menu 
+
+    {  
+         width:0;
+         padding:0;
+         text-decoration:none;
+    }
+    #menu ul a
+    {
+        font-size: 0; 
+        margin-top:-200px;
+    }
+    #menu ul li:hover > ul {
+
+        display:flex;
+    }
+    
+}
+
+/* first image css */
+#singalline{
+    border-top: 2px solid whitesmoke;
+    height: auto;
+}
+
+#firstimage {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#first
+{ margin: 0 auto;
+  width: 78%;
+  height: 600px;
+  border: 0.5px dotted;
+  cursor: pointer;
+  
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    #singalline
+    {
+        border: none;
+        margin-top: -150px;
+    }
+    #first
+    { 
+        height: auto;
+        width: 96%;
+    }
+}
+
+/* *********************slide div box 4*4  CSS **************************/
+
+
+#slidcontainer
+{   width: 80%;
+    background-color: whitesmoke;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#slideimg1>div>p
+{  
+
+  font-weight: 300;
+  font-size: 16px;
+  
+ }
+ #slideimg1>div>h5
+ {
+  font-weight: 200;
+  font-size: 19px; 
+  font-weight: bold;
+ }
+ #slideimg1>div{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+ }
+
+ #slideimg1>div>button
+ {   font-size:15px;
+     cursor: pointer;
+     margin-left:15px;
+     margin-right:15px;
+     color:white;
+     background-color:darkslategray;
+     padding: 13px 60px 13px 60px;
+     border: none;
+ }
+ 
+ @media only screen and (min-width: 50px) and (max-width: 780px)
+{
+     
+    #slidcontainer
+    {   width:auto;
+        height:auto;
+    } 
+
+}
+
+/* ***********shop by categary css************* */
+
+#shopbycategory
+{ 
+    font-family:"TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+    text-align: center;
+    color:#333333;
+    
+
+}
+
+#shopbycategorydiv
+{   width: 80%;
+    height: auto;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 15px;
+    text-align: center;
+}
+
+#shopbycategorydiv div img{
+    width:100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#shopbycategorydiv div a
+{
+    font-family: "TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+    font-size: 15px;
+    color:#333333;
+    text-decoration: underline;
+    
+}
+#shopbycategorydiv div a:hover
+{
+  color:#333333;
+  text-decoration: none;
+  
+}
+ 
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    #shopbycategorydiv
+    {  
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        
+    } 
+}
+
+/* grid img box */
+
+#gridimg
+{   width: 80%;
+    height: auto;
+    margin: 0 auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+
+}
+
+#gridimg div img {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+#gridimg div p
+{
+  color:lightslategray;
+  font-family: TradeGothicLTW05-Light, Arial, sans-serif;
+  font-size: 17px;
+  cursor: pointer;
+}
+#gridimg div a 
+{
+    color: rgb(31, 30, 30);
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: -px;
+    text-decoration: underline;
+}
+#gridimg>div>a:hover
+{
+    text-decoration:none;
+    
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    #gridimg
+    {   width:98%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 25px;
+
+    }
+}
+
+/* give love box css */
+
+#giveLove {
+    width: 96%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#giveLove img {
+    width: 100%;
+    height: 400px; 
+}
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    #giveLove img {
+        width: 100%;
+        height: auto; 
+    }
+}
+
+/* gift bar css */
+
+#giftbar {
+    width: 95.9%;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: -4px; 
+    background-color:#880040;
+
+}
+
+#innergiftbar
+{   margin: 0 auto;
+    width: 70%;
+    color:palevioletred;
+    display:grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: auto;
+    gap:25px;  
+    
+}
+
+#giftbar>#innergiftbar>div { 
+    background-color:white;
+    margin-top:30px;
+    padding: 12px;
+    font-style:"TradeGothicLTW05-BoldNo.2", Arial, sans-serif;
+  
+}
+#giftbar>#innergiftbar>div a
+{
+    text-decoration: none;
+    color:palevioletred;
+    font-size: 15px;
+    float: left;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+      
+    #innergiftbar
+    {   margin: 0 auto;
+        width:90%;
+        padding-bottom: 30px;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        
+    }
+    #giftbar {
+        width: 95.9%;
+        height:auto;
+    
+    }
+}
+
+/* more good things CSS */
+
+#goodthingsH
+{   text-align: center; 
+    font-family:"TradeGothicLTW05-BoldNo.2", Arial, sans-serif; 
+    color:darkslategray;
+
+}
+
+/* NOTE --****** more good things CSS  is same as shopbycategory*****/
+
+
+
+
+
+#bathAndBodyWorks
+{   margin: 0 auto;
+    width: 85%;
+    height:auto;
+    display:flex;
+    justify-content: space-between;
+    text-align: center;
+}
+#bathAndBodyWorks>div
+{
+  font-family: TrendSansW05-One, Arial, sans-serif;
+}
+.line
+{   width: 34%;
+    border: 1px solid black;
+    border-bottom:none;
+    border-left: none;
+    border-right: none;
+    margin-top:7px;
+
+}
+
+#bathAndBodyWorks #space {
+
+    font-size:18px;
+    font-weight: bold;
+    font-weight: 400;
+    color:#333333;
+    
+}
+#Daily 
+{   
+    text-align: center;
+    font-size: 15px;
+    font-weight: 300;
+    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+    font-style: normal;
+    color:darkslategray;
+}
+
+
+/* ********************sliding image css*********** */
+
+
+#outerbody {
+    position: relative;
+    height:100%;
+  }
+
+  #outerbody {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  
+  #slideimg1
+  {   height:200px;
+      width: 80%;
+      margin: 0 auto;
+      display:grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: auto;
+      gap: 20px;
+  }
+  #slideimg1>div>img
+  {
+      height: auto;
+      width:100%;
+  }
+  @media only screen and (min-width: 50px) and (max-width: 780px)
+{
+     
+    #outerbody {
+        position: relative;
+        height:100%;
+        width: 100%;
+    }
+      
+  #slideimg1
+  {   height:200px;
+      width:auto;
+      margin: 0 auto;
+      display:grid;
+      grid-template-columns: repeat(4,1fr);
+      grid-template-rows: auto;
+      gap:10px;
+  }
+}
+
+/* *********bath and body work css*********** */
+
+
+#content
+{ 
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+#content>h1
+{ 
+   font-family:TradeGothicLTW05-Roman, Arial, sans-serif;
+   font-weight: 200;
+   font-size: 30px;
+}
+#content>p>a{ 
+    font-size: 18px;
+    font-weight: 200;
+    color:rgb(55, 66, 77);
+    text-decoration: underline;
+
+}
+#content>p
+{   
+    font-size: 17px;
+    font-weight: 400;
+    color:rgb(49, 60, 71);
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+     
+    #content
+    { 
+        width: 98%;
+        height: auto;
+        line-height: 25px;
+        text-align: center;
+        text-decoration: none;
+    } 
+}
+/* ***************footter********** */
+
+#foot{
+       margin: auto;
+       width: 76%;
+       height: 300px;
+       text-align: left;
+       display: grid;
+       grid-template-columns: repeat(3,1fr);
+       grid-template-rows: auto;
+       margin-top: 40px;
+}
+#i{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(87, 84, 84);
+    border: 1px dotted;
+    padding:8px;
+    padding-left:15px;
+    padding-right:15px;
+    border-radius:50%;
+    
+}
+
+#icn
+{   
+  width: 20px;
+  height: 20px;
+  
+}
+.samefont
+{   color:rgb(87, 84, 84);
+    font-size: 15px;
+    font-weight: 200;
+}
+#input
+{  
+    padding:10px;
+    padding-left: 20px;
+}
+.btn{
+      padding:10px;
+      background-color:rgb(17, 3, 3);
+      color:white;
+      margin-left:-4px;
+      margin-top:2px;
+      border:none;
+}
+.btn:hover
+{   
+    color: black;
+    background-color: whitesmoke;
+}
+#geth6
+{   
+    font-weight: 200;
+}
+
+
+
+.box2
+{   
+     text-align: left;
+    display:grid;
+    grid-template-columns: repeat(2,1fr)
+}
+.box2 a
+{   color:rgb(87, 84, 84);
+   font-size:14px;
+   font-weight: 200;
+   font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+   text-align: left;
+}
+.boltmatch
+{ 
+    font-size: 13px;  
+  font-weight: bold;
+  font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+       
+    #foot{
+        margin: auto;
+        width: auto;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+        padding-left: 10px;
+        
+    } 
+
+    #input
+    {  
+        padding:10px;
+        padding-right:300px;
+        
+    }
+    
+}
+/* **********************end bar css************************************** */
+
+#Endbar
+{   margin: 0 auto;
+    width: 70%;
+    height:60px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#Endbar>#b2 { 
+    text-align:right;
+}
+
+#b2>img {
+    width: 100%;
+    height: 90px;
+}
+#geth6
+{   
+    margin: 0 auto;
+    font-weight: 200;
+    font-size: 15px;
+}
+#Endbar>#b1>a
+{
+    margin-right:5px;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    #Endbar
+    {   margin: 0 auto;
+        width:98%;
+        height:auto;
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+        gap: 30px;
+    }
+    #b2>img
+    {
+        width: 60%;
+        float:left;
+    }
+    #Endbar>#b1>a
+    {
+        margin-right:10px;
+    }
+}
+
+/* endbar icon */
+
+
+.fa-twitter
+{
+    background-color: rgb(42, 138, 198);
+    color: white;
+    padding: 6px;
+    border-radius: 50%;
+}
+
+
+.fa-facebook-f
+{
+    background-color:steelblue;
+    color: white;
+    padding: 7px;
+    border-radius:50%;
+}
+.fa-instagram
+{
+    padding: 7px;
+    border-radius: 50%;
+    color: white;
+    background-color:steelblue;
+}
+.fa-tiktok
+{
+    background-color:black;
+    color: white;
+    padding: 7px;
+    border-radius: 50%;
+}
+
+.fa-youtube
+{
+    color:red;
+
+}
+.fa-pinterest
+{
+    background-color:white;
+    color:crimson;
+}
+
+
+/* down the footer css */
+
+#ft {
+   
+    width: 100%;
+    height: 90px;
+    background-color: rgb(228, 224, 224);
+    display:grid;
+    grid-template-columns: repeat(7,1fr)
+
+}
+#ft div
+{
+    padding-top:30px;
+}
+#ft div,a{
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 15px;
+    color: #000;
+    
+}
+
+#ft div>a:hover
+{   
+  text-decoration: underline;
+  color:#000;
+}
+
+
+
+#lastline
+{   
+    margin: 0 auto;
+    text-align: center;
+    background-color: rgb(228, 224, 224);
+    font-weight: 300;
+    font-size: 15px; 
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    #ft {
+        height:auto;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto;
+        
+    
+    }
+    #lastline
+    {
+        padding-top:15px;
+        padding-bottom: 10px;
+        float: left;
+        background-color:rgb(228, 224, 224);
+        padding-right: 340px;
+    }
+}

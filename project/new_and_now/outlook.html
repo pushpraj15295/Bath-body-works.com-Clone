@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>quicklook</title>
+    <link rel="stylesheet" href="outlook.css">
+</head>
+<body>
+    <div id="heading">
+        <h1 >Quicklook of product</h1>
+    </div>
+    
+    <div id="outlook_container">
+        
+    </div>
+    <div id="button">
+    <button id="dec">-</button>
+    <h3></h3>
+    <button id="inc">+</button>
+    <button id="BAG">ADD TO BAG</button>
+    </div>
+    
+    <div id="deatails">
+        <div></div>
+        <div>
+            
+   <ul>
+    <li>FRAGRANCE
+        <ul>
+            <li>What it smells like: a sweet, sunny beach vacay.</li>
+            <li>Fragrance notes: tropical white coconut, saltwater breezes and sun-bleached woods.</li>
+        </ul>
+    </li>
+</ul>
+
+<ul>
+    <li >OVERVIEW
+        <ul>
+            <li>What it does: fills any room with noticeable, always-on fragrance.</li>
+            <li>New enhanced fragrance</li>
+            <li>Made with natural essential oils</li>
+            <li>Lasts up to 30 days</li>
+            <li>Effortless fragrance that welcomes you home</li>
+            <li>Pairs with any Wallflowers fragrance plug (sold separately)</li>
+        </ul>
+    </li>
+</ul>
+
+<ul>
+    <li>USAGE
+        <ol>
+            <li>To get started, twist right (clockwise) to uncap the refill and twist left (counter-clockwise) to attach it to the plug.</li>
+            <li>Always keep your plug and fragrance refill upright. (Bonus: our rotating plug lets you use a vertical or horizontal outlet!)</li>
+            <li>Because Wallflowers refills contain fragrance oils that may damage finished surfaces and some plastics, always keep a 12" clearance above your plug to prevent damage to surrounding surfaces.</li>
+        </ol>
+    </li>
+</ul>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+<script>
+    outlookdata=JSON.parse(localStorage.getItem("look"))
+    console.log(outlookdata)
+    // var Arrivalsdata=[
+    //      {url:"https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/dw/image/v2/BBDL_PRD/on/demandware.static/-/Sites-master-catalog/default/dwdbb3a85e/crop/026402543_crop.jpg?sw=500&sh=600&sm=fit&q=75&yocs=o_s_",
+    //      type:"New Fragrance",
+    //     name:"Pink Pineapple Sunrise",
+    //     type_name:"Ultimate Hydration Body Cream",
+    //     price:15.50, },
+    outlookdata.map(function(ele){
+        box=document.createElement("div")
+        side_box=document.createElement("div")
+        // side_box.setAttribute("id","side_box")
+
+        emage=document.createElement("img")
+        emage.src=ele.url
+        emage.setAttribute("id","emage")
+        subemage=document.createElement("img")
+        subemage.src=ele.url
+        subemage.setAttribute("id","subemage")
+
+
+        var name=document.createElement("h2")
+        name.innerText=ele.name
+        type=document.createElement("p")
+        type.innerText=ele.type_name
+        price=document.createElement("h2")
+        price.innerText="$"+ele.price
+        offer=document.createElement("p")
+        offer.innerText="Mix & Match: Buy 3, Get 1 Free"
+        offer.setAttribute("id","offer")
+        details=document.createElement("p")
+        details.innerText="details"
+        var d=document.createElement("u")
+        d.append(details)
+
+        recive=document.createElement("p")
+        recive.innerText="How do you want to receive it?"
+        r=document.createElement("b")
+        r.append(recive)
+
+        ship=document.createElement("p")
+        ship.innerText="Ship it"
+        s=document.createElement("b")
+        s.append(ship)
+
+        available=document.createElement("p")
+        available.innerText="available"
+
+        store=document.createElement("p")
+        store.innerText="Pick Up in Store"
+        store.setAttribute("id","store")
+        b=document.createElement("b")
+        b.append(store)
+
+        setstore=document.createElement("p")
+        setstore.innerText="setstore"
+        var u=document.createElement("u")
+        u.append(setstore)
+
+
+
+        box.append(subemage,emage)
+        side_box.append(name,type,price,offer,d,r,s,available,b,u)
+        document.querySelector("#outlook_container").append(box,side_box)
+
+
+
+
+
+
+
+
+var counter=outlookdata.length
+document.querySelector("h3").innerText=counter
+document.querySelector("#inc").addEventListener("click",incfun)
+function incfun(){
+counter++
+
+document.querySelector("h3").innerText=counter
+}
+
+document.querySelector("#dec").addEventListener("click",decfun)
+function decfun(){
+counter--
+
+document.querySelector("h3").innerText=counter
+
+}
+
+
+})
+</script>

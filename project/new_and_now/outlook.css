@@ -1,0 +1,72 @@
+#outlook_container{
+    /* border: 1px solid black; */
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+#outlook_container>div{
+    width: 50%;
+    margin: auto;
+    /* border: 1px solid black; */
+}
+#offer{
+    color: red;
+}
+#subemage{
+    height: 100px;
+    width: 50px;
+}
+#emage{
+    height: 400px;
+    width: 200px;
+}
+#store{
+    color: blue;
+}
+#button{
+    /* border: 1px solid black; */
+    width: 20%;
+    margin: auto;
+    display: flex;
+}
+#dec{
+    padding: 1px 10px 1px 10px;
+    border: none;
+}
+#dec:hover{
+    background-color: black;
+    color: white;
+}
+#inc{
+    padding: 1px 10px 1px 10px;
+    border: none;
+}
+#inc:hover{
+    background-color: black;
+    color: white; 
+}
+#BAG{
+    padding: 1px 30px 1px 30px;  
+    background-color: black;
+    color: white; 
+}
+#BAG:hover{
+    background-color:rgb(233, 233, 233);
+    color: black;
+    border: none;
+}
+#heading{
+    margin: auto;
+    width: 50%;
+        /* border: 1px solid black; */
+        text-align: center;
+}
+#heading>h1{
+    font-size: 50px;
+}
+#deatails{
+    display: grid;
+    /* border: 1px solid black; */
+    grid-template-columns: repeat(2,1fr);
+    padding-top: 30px;
+}

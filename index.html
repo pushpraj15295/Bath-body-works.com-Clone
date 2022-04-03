@@ -42,7 +42,7 @@
                    
                    <div id="Big">
 
-                        <div><img id="siign" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw1b727bc5/images/svg-icons/UI-MyAccount.svg?yocs=p_s_" alt=""></div>
+                        <div><img id="sign" src="https://cdn-fsly.yottaa.net/5d669b394f1bbf7cb77826ae/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/Sites-BathAndBodyWorks-Site/-/default/dw1b727bc5/images/svg-icons/UI-MyAccount.svg?yocs=p_s_" alt=""></div>
                         <div id="con"><i class="fa-2x fa-solid fa-cart-arrow-down"></i></div>
                  </div>
                    
@@ -634,6 +634,19 @@
  <script>
            document.querySelector("#shop").addEventListener("click", myfun)
 
+           document.querySelector("#sign").addEventListener("click",signFun)
+
+
+           function signFun(){
+                 window.location.href="http://127.0.0.1:5500/U2-project-bathand-body-works/login%20signin%20cartt/login.html"
+           }
+
+           document.querySelector("#con").addEventListener("click",addtocart)
+
+           function addtocart(){
+                 window.location.href="http://127.0.0.1:5500/U2-project-bathand-body-works/login%20signin%20cartt/cart.html"
+           }
+
               function myfun(){
                   window.location.href="http://127.0.0.1:5500/U2-project-bathand-body-works/project/body%20care/bathshower4.html"
               }
@@ -651,13 +664,12 @@
                   function myfun2(){
                         window.location.href="http://127.0.0.1:5500/U2-project-bathand-body-works/project/body%20care/Fragrance2.html"
                   }
-<<<<<<< HEAD
 
                                     document.querySelector("#shopbycategory").addEventListener("click", myfun3)
 
                   function myfun3(){
                         window.location.href="http://127.0.0.1:5500/U2-project-bathand-body-works/project/body%20care/topoffers1.html"
                   }
-=======
->>>>>>> 95aac4836a1d3119850b01e26d6f0b935ac18e92
+
+
       </script>

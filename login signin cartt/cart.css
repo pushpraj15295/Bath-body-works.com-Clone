@@ -1,0 +1,1113 @@
+*{
+    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+}
+
+#topbar
+{  
+    width: 100%;
+    height: 30px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:rgb(211, 202, 202);
+    float: right;
+}
+#innervbar
+{
+   display:flex; 
+   
+}
+#innervbar>i 
+{
+    padding-left:250px;
+    padding-right: 20px;
+    padding-top: 6px;
+}
+
+#innervbar p {
+    margin-top:-0.5px;
+    padding-top: 6px;
+}
+#innervbar>a
+{
+    text-decoration: underline;
+    padding-top: 4px;
+    
+}
+#innervbar>a:hover
+{
+    text-decoration:none;
+}
+.fa-location-dot
+{   
+    color:mediumvioletred;
+}
+
+@media only screen and (min-width: 50px) and (max-width:1435px)
+{
+   #topbar {
+
+    background-color:white;
+    float: left;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:35px;
+    
+    
+   }
+    #innervbar
+   {
+      margin: 0;
+      padding: 0;
+   
+   }
+   #innervbar i
+   {
+     padding: 0;
+     padding-left: 10px;
+     padding-right: 8px;
+     padding-top:4px;
+   }
+   #innervbar p
+   {
+      margin-left: 5px;
+      margin-top:0px;
+      margin-right: 8px;;
+      
+   }
+   #innervbar>a
+  {
+    
+    margin-left: 0%;
+    
+  }
+}
+
+
+/* ****************naV BAR CSS****************** */
+
+#navbar
+{   
+    width: 100%;
+    height:100px;
+    background-color:#ffffff;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+    
+    
+}
+#navbar div>a>h1 {
+
+    font-size: 50px;
+    font-weight: 300;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#05599b;
+
+}
+#srch {
+    color:#05599b;
+    height: 15px;
+    width: 15px;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top: 7.4px;
+    padding-right: 2px;
+    padding-bottom: 13.7px;
+}
+#search
+{   
+   
+   border: none;
+   border-top: 1px solid;
+    border-bottom: 1px solid; 
+    border-left: 1px solid;
+    padding-top: 9px;
+    padding-bottom:11px;
+    font-weight: 200;
+    margin-left: 9px;
+    padding-left: 10px;
+    /* padding-right: 100px; */
+}
+#centerdiv
+{
+    width: 700px;
+  margin-top:-50px;
+
+ 
+}
+
+
+
+#Big
+{
+    display:flex;
+    float:right;
+    
+}
+
+#Big img
+{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+    padding-top:-5px;
+    cursor: pointer;
+}
+#con
+{
+    padding-top: 18px;
+    padding-right: 35px;
+    cursor: pointer;
+}
+.fa-cart-arrow-down
+{
+    color:teal;
+    margin-top: 20px;
+}
+
+@media only screen and (min-width: 50px) and (max-width:1435px){
+
+    #navbar
+    {
+        margin-top:-50px;
+        padding-bottom: 56px;
+        width: 100%;
+        height: auto;
+        display:grid;
+       grid-template-columns: repeat(1,1fr);
+       grid-template-rows: auto;
+    }
+    #navbar div>a>h1 {
+
+        font-size: 35px;
+        font-weight: 500;
+        padding-bottom: 15px;
+        margin-top: -20px;
+        border-bottom: 3px solid #dde2e6;
+    }
+    #srch {
+        height: 15px;
+        width: 15px;
+        border: none;
+       float: left;
+       font-size:23px;
+       padding:0;
+       margin-top: -103px;
+       margin-left: 40px;
+    }
+    #search
+    {   
+       
+       border: none;
+       text-decoration: none;
+        font-size: 0;
+    }
+    #Big
+    {
+        margin-top:-120px;
+    }
+    
+    #Big img
+    {
+        width: 40px;
+        height: 40px;
+       
+    }
+        #con
+    {
+       font-size: 12px;
+       margin-top:-8px;
+       padding-right: -5px;
+    }
+
+}
+
+/***********+++++++*************** drop down menu Css*******++++++****** */
+
+
+
+
+#menu 
+
+{   width: 90%;
+     margin-left: 50px;
+    margin: 0 auto; 
+    margin-top: -40px; 
+    margin-bottom:10px;
+
+}
+
+#menu>ul
+ {
+
+    background:white;
+}
+#menu ul
+{
+    list-style: none;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    float: left;
+}
+#menu ul a 
+{
+
+    text-decoration: none;
+    line-height:30px;
+    padding: 0px 32px;
+    font-weight:300;
+    font-size: 15px;
+    color:rgb(19, 11, 11);
+    display:block;
+}
+
+#menu ul li {
+
+    float: left;
+    position:relative;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+}
+
+#menu ul ul {
+   position:absolute ;
+   background:whitesmoke;
+   top: 100;
+   left: 0;
+   display:none;
+}
+#menu ul ul li {
+
+    float:left;
+    width:250px;
+}
+
+
+#menu ul ul ul
+{
+    top: 0;
+    left: 100;
+}
+#menu ul li:hover > ul {
+
+    display: block;
+}
+#menu>ul>li>a:hover
+{
+    border-bottom: 2px solid #04599b;
+    border-left: none;
+}
+#menu ul li:hover {
+
+    border-left: 2px solid rgb(24, 24, 119);
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    
+    #menu 
+
+    {  
+         width:0;
+         padding:0;
+         text-decoration:none;
+    }
+    #menu ul a
+    {
+        font-size: 0; 
+        margin-top:-200px;
+    }
+    #menu ul li:hover > ul {
+
+        display:flex;
+    }
+    
+}
+
+/* first image css */
+#singalline{
+    border-top: 2px solid whitesmoke;
+    height: auto;
+}
+
+#firstimage {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#first
+{ margin: 0 auto;
+  width: 78%;
+  height: 600px;
+  border: 0.5px dotted;
+  cursor: pointer;
+  
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    #singalline
+    {
+        border: none;
+        margin-top: -150px;
+    }
+    #first
+    { 
+        height: auto;
+        width: 96%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container{
+    width: 100%;
+    height: 3500px;
+    margin-top: 150px;
+    border: none;
+
+}
+
+
+/* corner continue shopping section */
+
+ a{ 
+    color: #666;
+    margin-left: 30px;
+    font-weight: 400px;
+    font-size: 12px;
+    margin-top: 30px;
+
+} 
+.fa-arrow-left-long{
+    margin-right: 3px;
+    
+}
+/* Top Head of cart page */
+h1{
+    width: 65%;
+    border-bottom: 1px solid #333333;
+    margin: auto;
+    font-size: 24px;
+    padding-bottom: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 50px;
+
+}
+#boderalign{
+    text-align: center;
+    font-size: 13px;
+    background-color:rgb(255,255,255);
+    width: 260px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: -87px;
+}
+
+/* Recomended item displayed */
+
+.recomended{
+    width:50%;
+    height: 400px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin: auto;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    grid-template-rows: auto;
+    overflow-x:scroll;
+    margin-top: 80px;
+    gap:25px
+}
+
+/* Inner box 0f Recomended Section */
+ 
+.box1{
+    width: 180px;
+    text-align: center;
+
+}
+img{
+    height: 220px;
+    width: 100%;
+}
+img+h2{
+    font-size: 15px;
+    width: 100%;
+    text-align: center;
+    color: #515151;
+}
+h2+p{
+    font-size:11px;
+    margin-top: -5px;
+    color: #515151;
+}
+p+h4{
+    margin-top: -2px;
+    color: #515151;
+}
+#shopping-offer{
+    font-size: 13px;
+    margin-top: -5px;
+    color: brown;
+
+}
+
+ /* After .recomended section */
+
+ .paypal{
+     height: 40px;
+     width: 65%;
+     margin: auto;
+     margin-top: 35px;
+     display: flex;
+     justify-content: space-between;
+ }
+ .paypal > p + div{
+
+     height: 40px;
+     width: 430px;
+     display: flex;
+     justify-content: space-between;
+     
+ }
+ #checkout{
+     width: 46%;
+     height: 40px;
+     display: flex;
+     background-color: rgb(255,196,57);
+     border-radius: 5px;
+ }
+
+ /* checkout boxes */
+
+ .paypal > p + div > div >img{
+     width:67.1px;
+     height: 17px;
+     margin: auto;
+
+ }
+ #checkout+div{
+    width: 46%;
+    height: 40px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold; 
+    background-color: rgb(0,133,39);
+    color: aliceblue;
+ }
+ #checkout+div>p{
+     margin-left: 5px;
+ }
+ #checkout+div:hover{
+     background-color: rgb(230,245,255);
+     color:rgb(0,133,39);
+ }
+ #checkout:hover{
+    background-color: rgb(230,245,255);
+    color:rgb(0,133,39);
+ }
+
+   /* cart offer and paragraph */
+
+ #blue{
+    height: 40px;
+    width: 65%;
+    border: 1px solid teal;
+    margin: auto;
+    margin-top: 35px;
+    background-color: rgb(0,86,153);
+    color: aliceblue;
+    text-align: center;
+ }
+ #details{
+     color: aliceblue;
+     margin-left: 3px;
+     font-size: 15px;
+ }
+.paragraph{
+    width: 65%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: repeat(4,30px);
+    gap: 15px;
+    margin-top: 25px;
+}
+.paragraph > div{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    background-color: rgb(230,245,255);
+    color: #1b71aa;
+    font-weight: bold;
+}
+#para3{
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    color: #333;
+}
+
+   /* cart icon bigger boxes and  shipping details */
+
+#cartIcon{
+    height: 100px;
+    background-color: white;
+    display: flex;
+
+}
+#cartIcon > div{
+    width: 50%;
+    border: none;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+}
+
+ /* lower icon ajustment */
+
+ .solid {
+margin-right: 25px;
+top: 2px;
+background: url(https://cdn-fsly.yottaa.net/5d669b3…/www.bathandbodyworks.com/v~4b.20f/on/demandware.static/Sites-BathAndBodyWorks-Site/-/en_US/v1648806363442/images/svg-icons/bopis-shipping.svg?yocs=o_s_) no-repeat;
+background-size: 30px 15px;
+width: 30px;
+height: 15px;
+display: inline-block;
+font-size: 30px;
+color:coral
+}
+ 
+/* scceond boxes of carticon */
+
+#cartIcon>#store{
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 22px;   
+}
+#set-store{
+    color: #1b71aa;
+    margin-left: 1px;
+    color: #333;
+    font-weight: 400;
+}
+.new{
+    color:#e41987
+}
+
+#store > div >p:nth-child(2){
+    color: #333;
+    font-weight: 400;
+}
+
+/* CART ITEM START HERE */
+
+table{
+    width: 65%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+table th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    color: #666;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-collapse: collapse;
+
+  }
+  table td,
+  table th{
+      text-align: center;
+      padding: 10px;
+      
+  }
+  tbody > tr > td{
+      height: 100px;
+      width: 80px;
+  }
+  td > p{
+      font-size: 10px;
+      width: 180px;
+  }
+  td > p:nth-child(1){
+      font-size: 18px;
+  }
+  td > p:nth-child(3){
+      color: red;
+  }
+  .love{
+      color: #e41987;
+  }
+  tr{
+      border-bottom: 1px solid #333;
+  }
+  
+   /* update button */
+
+  table + div{
+      width: 65%;
+      height: 60px;
+      margin: auto;
+      margin-top: 30px;
+      display: flex;
+      justify-content: flex-end;
+      border-bottom: 2px solid rgb(163, 158, 158);
+  }
+  #btn1{
+      height: 30px;
+      width: 150px;
+      background-color: #333333;
+      color: white;
+      border: none;
+  }
+  #btn1:hover{
+      background-color: #f2f2f2;
+      color: #333333;
+  }
+
+  /* update button lower box */
+  .promo{
+      width: 65%;
+      height: 330px;
+      margin: auto;
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+  }
+  #promocode{
+      width: 300px;
+      height: 150px;
+      border: 1px solid #333333;
+      padding-left: 15px;
+  }
+  #promocode > p{
+      font-size: 13px;
+  }
+  #promocode > input{
+      height: 25px;
+      width: 180px;
+  }
+  #apply{
+    height: 30px;
+    width: 80px;
+    margin-left:-5px ;
+    background-color: #333333;
+    color: white;
+    border: none;
+  }
+  #apply:hover{
+      background-color: #f2f2f2;
+      color: #333333;
+  }
+
+  /* final checkout box */
+
+  .final-checkout{
+      width: 55%;
+      height: 98%;
+      background-color: #f2f2f2;     
+  }
+  .subtotal{
+      width: 85%;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+  }
+  .subtotal > p{
+      font-size: 13px;
+      color: #333333;
+  }
+  .final-checkout > div:nth-child(4){
+      border-bottom: 2px solid #333333;
+  }
+  .final-checkout > div:nth-child(5){
+      color: #3b3433;
+  }
+  .final-checkout > div:nth-child(6){
+      box-sizing: border-box;
+  }
+  .subtotal > #checkout > img{
+    width:67.1px;
+    height: 17px;
+    margin: auto;
+  }
+
+    /* item quantaty count */
+.countbox{
+    height: 40px;
+    width: 200px;
+    display: flex;
+    box-sizing: border-box;
+    margin: auto;
+    margin-top: -22px;
+   
+}
+.countbox > p{
+    height: 100%;
+    width: 50px;
+    background-color: #f2f2f2;
+    margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.countbox > p:hover{
+    background-color: cadetblue;
+}
+
+#remove{
+    height: 20px;
+    width: 100px;
+    background-color: #333;
+    padding: 10px;
+    color:#f2f2f2 ;
+    cursor: pointer;
+    border-radius: 5px;
+}
+#remove:hover{
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#foot{
+    margin: auto;
+    width: 76%;
+    height: 300px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    
+}
+#i{
+ font-size: 20px;
+ font-weight: bold;
+ color: rgb(87, 84, 84);
+ border: 1px dotted;
+ padding:8px;
+ padding-left:15px;
+ padding-right:15px;
+ border-radius:50%;
+ 
+}
+
+#icn
+{   
+width: 20px;
+height: 20px;
+
+}
+.samefont
+{   color:rgb(87, 84, 84);
+ font-size: 15px;
+ font-weight: 200;
+}
+#input
+{  
+ padding:10px;
+ padding-left: 20px;
+}
+.btn{
+   padding:10px;
+   background-color:rgb(17, 3, 3);
+   color:white;
+   margin-left:-4px;
+   margin-top:2px;
+   border:none;
+}
+.btn:hover
+{   
+ color: black;
+ background-color: whitesmoke;
+}
+#geth6
+{   
+ font-weight: 200;
+}
+
+
+
+.box2
+{   
+  text-align: left;
+ display:grid;
+ grid-template-columns: repeat(2,1fr)
+}
+.box2 a
+{   color:rgb(87, 84, 84);
+font-size:14px;
+font-weight: 200;
+font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+text-align: left;
+}
+.boltmatch
+{ 
+ font-size: 13px;  
+font-weight: bold;
+font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    
+ #foot{
+     margin: auto;
+     width: auto;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     grid-template-rows: auto;
+     gap: 15px;
+     padding-left: 10px;
+     
+ } 
+
+ #input
+ {  
+     padding:5px;
+     padding-right:300px;
+     
+ }
+ 
+}
+/* **********************end bar css************************************** */
+
+#Endbar
+{   margin: 0 auto;
+ width: 70%;
+ height:60px;
+ display:grid;
+ grid-template-columns: repeat(2,1fr);
+}
+
+#Endbar>#b2 { 
+ text-align:right;
+}
+
+#b2>img {
+ width: 100%;
+ height: 90px;
+}
+#geth6
+{   
+ margin: 0 auto;
+ font-weight: 200;
+ font-size: 15px;
+}
+#Endbar>#b1>a
+{
+ margin-right:5px;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+ #Endbar
+ {   margin: 0 auto;
+     width:98%;
+     height:auto;
+     display:grid;
+     grid-template-columns: repeat(1,1fr);
+     gap: 30px;
+ }
+ #b2>img
+ {
+     width: 60%;
+     float:left;
+ }
+ #Endbar>#b1>a
+ {
+     margin-right:10px;
+ }
+}
+
+/* endbar icon */
+
+
+.fa-twitter
+{
+ background-color: rgb(42, 138, 198);
+ color: white;
+ padding: 6px;
+ border-radius: 50%;
+}
+
+
+.fa-facebook-f
+{
+ background-color:steelblue;
+ color: white;
+ padding: 7px;
+ border-radius:50%;
+}
+.fa-instagram
+{
+ padding: 7px;
+ border-radius: 50%;
+ color: white;
+ background-color:steelblue;
+}
+.fa-tiktok
+{
+ background-color:black;
+ color: white;
+ padding: 7px;
+ border-radius: 50%;
+}
+
+.fa-youtube
+{
+ color:red;
+
+}
+.fa-pinterest
+{
+ background-color:white;
+ color:crimson;
+}
+
+
+/* down the footer css */
+
+#ft {
+
+ width: 100%;
+ height: 90px;
+ background-color: rgb(228, 224, 224);
+ display:grid;
+ grid-template-columns: repeat(7,1fr)
+
+}
+#ft div
+{
+ padding-top:30px;
+}
+#ft div,a{
+ margin: 0 auto;
+ text-align: center;
+ text-decoration: none;
+ font-weight: 300;
+ font-size: 15px;
+ color: #000;
+ 
+}
+
+#ft div>a:hover
+{   
+text-decoration: underline;
+color:#000;
+}
+
+
+
+#lastline
+{   
+ margin: 0 auto;
+ text-align: center;
+ background-color: rgb(228, 224, 224);
+ font-weight: 300;
+ font-size: 15px; 
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+ #ft {
+     height:auto;
+     display:grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: auto;
+     
+ 
+ }
+ #lastline
+ {
+     padding-top:15px;
+     padding-bottom: 10px;
+     float: left;
+     background-color:rgb(228, 224, 224);
+     padding-right: 340px;
+ }
+}

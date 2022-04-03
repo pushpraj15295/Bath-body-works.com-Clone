@@ -1,0 +1,845 @@
+*{
+    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+}
+
+
+/* ***TOP BAR CSS*** */
+
+#topbar
+{  
+    width: 100%;
+    height: 30px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    background-color:rgb(211, 202, 202);
+    float: right;
+}
+#innervbar
+{
+   display:flex; 
+   
+}
+#innervbar>i 
+{
+    padding-left:250px;
+    padding-right: 20px;
+    padding-top: 6px;
+}
+
+#innervbar p {
+    margin-top:-0.5px;
+    padding-top: 6px;
+}
+#innervbar>a
+{
+    text-decoration: underline;
+    padding-top: 4px;
+    
+}
+#innervbar>a:hover
+{
+    text-decoration:none;
+}
+.fa-location-dot
+{   
+    color:mediumvioletred;
+}
+
+@media only screen and (min-width: 50px) and (max-width:1435px)
+{
+   #topbar {
+
+    background-color:white;
+    float: left;
+    display:grid;
+    grid-template-columns: repeat(1,1fr);
+    gap:35px;
+    
+    
+   }
+    #innervbar
+   {
+      margin: 0;
+      padding: 0;
+   
+   }
+   #innervbar i
+   {
+     padding: 0;
+     padding-left: 10px;
+     padding-right: 8px;
+     padding-top:4px;
+   }
+   #innervbar p
+   {
+      margin-left: 5px;
+      margin-top:0px;
+      margin-right: 8px;;
+      
+   }
+   #innervbar>a
+  {
+    
+    margin-left: 0%;
+    
+  }
+}
+
+
+/* ****************naV BAR CSS****************** */
+
+#navbar
+{   
+    width: 100%;
+    height:100px;
+    background-color:#ffffff;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    gap: 40px;
+    
+    
+}
+#navbar div>a>h1 {
+
+    font-size: 50px;
+    font-weight: 300;
+    font-family:Arial, Helvetica, sans-serif;
+    color:#05599b;
+
+}
+#srch {
+    color:#05599b;
+    height: 15px;
+    width: 15px;
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    padding-top: 7.4px;
+    padding-right: 2px;
+    padding-bottom: 13.7px;
+}
+#search
+{   
+   
+   border: none;
+   border-top: 1px solid;
+    border-bottom: 1px solid; 
+    border-left: 1px solid;
+    padding-top: 9px;
+    padding-bottom:11px;
+    font-weight: 200;
+    margin-left: 9px;
+    padding-left: 10px;
+    padding-right: 100px;
+}
+#centerdiv
+{
+  margin-top:-50px;
+}
+
+
+
+#Big
+{
+    display:flex;
+    float:right;
+    
+}
+
+#Big img
+{
+    width: 50px;
+    height: 50px;
+    padding-right: 20px;
+    padding-top:-5px;
+    cursor: pointer;
+}
+#con
+{
+    padding-top: 18px;
+    padding-right: 35px;
+    cursor: pointer;
+}
+.fa-cart-arrow-down
+{
+    color:teal;
+}
+
+@media only screen and (min-width: 50px) and (max-width:1435px){
+
+    #navbar
+    {
+        margin-top:-50px;
+        padding-bottom: 56px;
+        width: 100%;
+        height: auto;
+        display:grid;
+       grid-template-columns: repeat(1,1fr);
+       grid-template-rows: auto;
+    }
+    #navbar div>a>h1 {
+
+        font-size: 35px;
+        font-weight: 500;
+        padding-bottom: 15px;
+        margin-top: -20px;
+        border-bottom: 3px solid #dde2e6;
+    }
+    #srch {
+        height: 15px;
+        width: 15px;
+        border: none;
+       float: left;
+       font-size:23px;
+       padding:0;
+       margin-top: -103px;
+       margin-left: 40px;
+    }
+    #search
+    {   
+       
+       border: none;
+       text-decoration: none;
+        font-size: 0;
+    }
+    #Big
+    {
+        margin-top:-120px;
+    }
+    
+    #Big img
+    {
+        width: 40px;
+        height: 40px;
+       
+    }
+        #con
+    {
+       font-size: 12px;
+       margin-top:-8px;
+       padding-right: -5px;
+    }
+
+}
+
+/***********+++++++*************** drop down menu Css*******++++++****** */
+
+
+
+
+#menu 
+
+{   width: 90%;
+     margin-left: 50px;
+    margin: 0 auto; 
+    margin-top: -40px; 
+    margin-bottom:10px;
+
+}
+
+#menu>ul
+ {
+
+    background:white;
+}
+#menu ul
+{
+    list-style: none;
+    position: relative;
+    margin: auto;
+    padding: 0;
+    float: left;
+}
+#menu ul a 
+{
+
+    text-decoration: none;
+    line-height:30px;
+    padding: 0px 32px;
+    font-weight:300;
+    font-size: 15px;
+    color:rgb(19, 11, 11);
+    display:block;
+}
+
+#menu ul li {
+
+    float: left;
+    position:relative;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding: 0;
+}
+
+#menu ul ul {
+   position:absolute ;
+   background:whitesmoke;
+   top: 100;
+   left: 0;
+   display:none;
+}
+#menu ul ul li {
+
+    float:left;
+    width:250px;
+}
+
+
+#menu ul ul ul
+{
+    top: 0;
+    left: 100;
+}
+#menu ul li:hover > ul {
+
+    display: block;
+}
+#menu>ul>li>a:hover
+{
+    border-bottom: 2px solid #04599b;
+    border-left: none;
+}
+#menu ul li:hover {
+
+    border-left: 2px solid rgb(24, 24, 119);
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    
+    #menu 
+
+    {  
+         width:0;
+         padding:0;
+         text-decoration:none;
+    }
+    #menu ul a
+    {
+        font-size: 0; 
+        margin-top:-200px;
+    }
+    #menu ul li:hover > ul {
+
+        display:flex;
+    }
+    
+}
+
+/* first image css */
+#singalline{
+    border-top: 2px solid whitesmoke;
+    height: auto;
+}
+
+#firstimage {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#first
+{ margin: 0 auto;
+  width: 78%;
+  height: 600px;
+  border: 0.5px dotted;
+  cursor: pointer;
+  
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    #singalline
+    {
+        border: none;
+        margin-top: -150px;
+    }
+    #first
+    { 
+        height: auto;
+        width: 96%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#container{
+    height: 1200px;
+    width: 100%;
+    border:none;
+    margin-top: 90px;
+}
+.top_left{
+    display: flex;
+    width: 220px;
+    justify-content: space-evenly;
+    margin-left: 30px;
+    font-size: 12px;
+    font-weight: 400;
+    color:#666666;
+    font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+}
+#box1{
+    width: 60%;
+    height: 200px;
+    border-bottom: 1px solid rgb(34, 33, 33);
+    margin: auto;
+    box-sizing: border-box;
+    
+}
+#box1 > img{
+    height: 55%;
+    width: 100%;
+}
+#para1{
+    
+    font-family:  "Trade Gothic W01 Light", Arial, sans-serif ;
+    font-weight:200;
+    color: #333333;
+    font-size: 24px;
+    line-height: 21px;
+    margin-top: 45px;
+}
+#home{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.inputField{
+    width: 60%;
+    height: 900px;
+    border: none;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    
+}
+#red{
+    color: red;
+}
+#req{
+    font-size: 11px;
+    font-family: "Trade Gothic W01 Light", Arial, sans-serif; ;
+    margin-right: 20px;
+    color: #666666;
+    margin-top: 2px;
+    position: absolute; 
+    margin-right: -830px;
+    float: right; 
+    
+}
+.sizeset{
+    height: 30px;
+    width: 350px;
+    margin-bottom: 25px;
+    
+    
+}
+.paraFont{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    color: #333333;
+}
+.phone{
+    font-size: 12px;
+    line-height: 12px;
+    color: #666666;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-bottom: 40px;
+}
+#field-icon {
+    float: right;
+    margin-left: -55px;
+    position:absolute;
+    /* z-index: 2; */
+    margin-top: 8px;
+    font-size: 13px;
+  }
+  .align{
+      text-align: center;
+      text-decoration: underline;
+      font-size: 12px;
+      cursor: pointer;
+  }
+  #submitbox{
+      height: 38px;
+      width: 200px;
+      font-size: 12px;
+      background-color: rgb(51,51,51);
+      color: white;
+      padding: 10px;
+      border: none;
+      margin-top: 15px;
+      margin-left: 85px;
+      
+  }
+  #user input[type="submit"]:hover {
+    background: white;
+    color: black;
+}
+  #question{
+      text-align: center;
+      margin-top: 25px;
+      font-size: 12px;
+      color:rgb(149,121,150);
+      line-height: 15px;
+     font-weight: 400;
+  }
+  #question+p{
+      text-align: center;
+      font-size: 13px;
+      color:rgb(149,121,150);
+      font-weight: 400;
+  }
+
+  @media all and (min-width: 381px) and (max-width:720px){
+    #container{
+        width: 100%;
+        margin: auto;
+    }
+    .inputField{
+        width: 100%;
+        height: 900px;
+        margin: auto;
+        display: flex;
+        justify-content: center;
+        
+    }
+    #req{
+        margin-left: 100px;
+    }
+
+  }
+  @media all and (min-width: 80px) and (max-width:380px){
+    #container{
+        width: 100%;  
+    }
+    .inputField{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        box-sizing: content-box;
+         
+    }
+    .sizeset{
+        height: 20px;
+        width: 180px;
+        margin-bottom: 10px;  
+
+    }
+
+  }
+
+input[type=text]:focus{
+    outline: 0.5px dotted;
+    outline-offset: 1px;  
+}
+input[type=email]:focus{
+    outline: 0.5px dotted;
+    outline-offset: 1px;  
+}
+input[type=number]:focus{
+    outline: 0.5px dotted;
+    outline-offset: 1px;  
+}
+input[type=password]:focus{
+    outline: 0.5px dotted;
+    outline-offset: 1px;  
+}
+
+
+#nameerror{
+    color: red;
+}  
+
+
+
+
+
+
+
+
+
+
+/* -------------------------FOOTER------------------------- */
+
+#foot{
+    margin: auto;
+    width: 76%;
+    height: 300px;
+    text-align: left;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+    
+}
+#i{
+ font-size: 20px;
+ font-weight: bold;
+ color: rgb(87, 84, 84);
+ border: 1px dotted;
+ padding:8px;
+ padding-left:15px;
+ padding-right:15px;
+ border-radius:50%;
+ 
+}
+
+#icn
+{   
+width: 20px;
+height: 20px;
+
+}
+.samefont
+{   color:rgb(87, 84, 84);
+ font-size: 15px;
+ font-weight: 200;
+}
+#input
+{  
+ padding:10px;
+ padding-left: 20px;
+}
+.btn{
+   padding:10px;
+   background-color:rgb(17, 3, 3);
+   color:white;
+   margin-left:-4px;
+   margin-top:2px;
+   border:none;
+}
+.btn:hover
+{   
+ color: black;
+ background-color: whitesmoke;
+}
+#geth6
+{   
+ font-weight: 200;
+}
+
+
+
+.box2
+{   
+  text-align: left;
+ display:grid;
+ grid-template-columns: repeat(2,1fr)
+}
+.box2 a
+{   color:rgb(87, 84, 84);
+font-size:14px;
+font-weight: 200;
+font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+text-align: left;
+}
+.boltmatch
+{ 
+ font-size: 13px;  
+font-weight: bold;
+font-family: "Trade Gothic W01 Light", Arial, sans-serif;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+    
+ #foot{
+     margin: auto;
+     width: auto;
+     height: auto;
+     display: grid;
+     grid-template-columns: repeat(1,1fr);
+     grid-template-rows: auto;
+     gap: 15px;
+     padding-left: 10px;
+     
+ } 
+
+ #input
+ {  
+     padding:5px;
+     padding-right:300px;
+     
+ }
+ 
+}
+/* **********************end bar css************************************** */
+
+#Endbar
+{   margin: 0 auto;
+ width: 70%;
+ height:60px;
+ display:grid;
+ grid-template-columns: repeat(2,1fr);
+}
+
+#Endbar>#b2 { 
+ text-align:right;
+}
+
+#b2>img {
+ width: 100%;
+ height: 90px;
+}
+#geth6
+{   
+ margin: 0 auto;
+ font-weight: 200;
+ font-size: 15px;
+}
+#Endbar>#b1>a
+{
+ margin-right:5px;
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+ #Endbar
+ {   margin: 0 auto;
+     width:98%;
+     height:auto;
+     display:grid;
+     grid-template-columns: repeat(1,1fr);
+     gap: 30px;
+ }
+ #b2>img
+ {
+     width: 60%;
+     float:left;
+ }
+ #Endbar>#b1>a
+ {
+     margin-right:10px;
+ }
+}
+
+/* endbar icon */
+
+
+.fa-twitter
+{
+ background-color: rgb(42, 138, 198);
+ color: white;
+ padding: 6px;
+ border-radius: 50%;
+}
+
+
+.fa-facebook-f
+{
+ background-color:steelblue;
+ color: white;
+ padding: 7px;
+ border-radius:50%;
+}
+.fa-instagram
+{
+ padding: 7px;
+ border-radius: 50%;
+ color: white;
+ background-color:steelblue;
+}
+.fa-tiktok
+{
+ background-color:black;
+ color: white;
+ padding: 7px;
+ border-radius: 50%;
+}
+
+.fa-youtube
+{
+ color:red;
+
+}
+.fa-pinterest
+{
+ background-color:white;
+ color:crimson;
+}
+
+
+/* down the footer css */
+
+#ft {
+
+ width: 100%;
+ height: 90px;
+ background-color: rgb(228, 224, 224);
+ display:grid;
+ grid-template-columns: repeat(7,1fr)
+
+}
+#ft div
+{
+ padding-top:30px;
+}
+#ft div,a{
+ margin: 0 auto;
+ text-align: center;
+ text-decoration: none;
+ font-weight: 300;
+ font-size: 15px;
+ color: #000;
+ 
+}
+
+#ft div>a:hover
+{   
+text-decoration: underline;
+color:#000;
+}
+
+
+
+#lastline
+{   
+ margin: 0 auto;
+ text-align: center;
+ background-color: rgb(228, 224, 224);
+ font-weight: 300;
+ font-size: 15px; 
+}
+
+@media only screen and (min-width: 50px) and (max-width: 780px)
+{
+ #ft {
+     height:auto;
+     display:grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: auto;
+     
+ 
+ }
+ #lastline
+ {
+     padding-top:15px;
+     padding-bottom: 10px;
+     float: left;
+     background-color:rgb(228, 224, 224);
+     padding-right: 340px;
+ }
+}

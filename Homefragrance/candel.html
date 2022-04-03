@@ -562,29 +562,29 @@
                 <hr>
 
                 <div id="filter">
-                    <div><p>Filter By:</p></div>
+                    <div><h1>Filter By:</h1></div>
                     <div>
-                        <select name="PRODUCT BY:" id="">
-                           <option value="" style="width: 100%;background-color: #f2f2f2;"><p>PRODUCT BY</p></option>
-                           <option value="">3Wick Candel</option>
-                           <option value="">Candel Holder</option>
-                           <option value="">Single Wick Candel</option>
-                           <option value="button">Done</option>
+                        <select name="" id="sortprice">
+                           <option value="">sortprice</option>
+                           <option value="">high to low</option>
+                           <option value="">low to high</option>
+                           
+                           
                         </select>
                     </div>
                     <div>
-                        <select name="" id="">
-                            <option value="FRAGRANCE NAME"></option>
-                            <option value=""></option>
+                        <select name="" id="sortname">
+                            <option value="sortname">sortname</option>
+                            <option value="ascending">ascending</option>
+                            <option value="decending">decending</option>
                         </select>
                     </div>
                     <div>
-                        <select name="" id="">
-                            <option value="">Floral</option>
-                            <option value="">Fresh</option>
-                            <option value="">Fruity</option>
-                            <option value="">Sweet</option>
-                            <option value="">Woody</option>
+                        <select name="" id="priority">
+                            <option value="">select by priority</option>
+                            <option value="New Fragrance">New Fragrance</option>
+                            <option value="New!">New!</option>
+                            <option value="Online Exclusive">Online Exclusive</option>
                         </select>
                     </div>
                 </div>
@@ -982,6 +982,7 @@ var mensData = [
 
     document.querySelector("#container").append(box);
   });
+
 
 </script>
 

@@ -16,6 +16,41 @@
     <script src="https://kit.fontawesome.com/24c494a6b6.js"
       crossorigin="anonymous" ></script>
     <style>
+
+#filter{
+            display: flex;
+            /* grid-template-columns: 15px 30px 30px 2px; */
+            background-color: #f2f2f2;
+            /* border: 1px solid; */
+            gap: 10px;
+            
+        }
+        #filter>div{
+            /* border: 1px solid; */
+            width: 15%;
+        }
+      #sortprice{
+        padding: 6px ;
+        font-size: 20px;
+        margin-top: 9px;
+       
+      }
+      #sortname{
+        padding: 6px;
+        font-size: 20px;
+        margin-top: 9px;
+      }
+      #priority{
+        padding: 6px;
+        font-size:20px;
+        margin-top: 9px;
+      }
+      #sortby{
+        padding: px;
+        font-size:19px;
+        margin-top: 9px;
+        margin-left: 200px;
+      }
         #top{
             display: flex;
             gap: 5px;
@@ -46,18 +81,7 @@
             border: px solid black;
             
         }
-        #filter{
-            display: flex;
-            /* grid-template-columns: 15px 30px 30px 2px; */
-            background-color: #f2f2f2;
-            /* border: 1px solid; */
-            gap: 10px;
-            
-        }
-        #filter>div{
-            /* border: 1px solid; */
-            width: 20%;
-        }
+        
         #container{
             display: grid;
             grid-template-columns: repeat(4,1fr);
@@ -572,31 +596,41 @@
                 <hr>
 
                 <div id="filter">
-                    <div><p>Filter By:</p></div>
+                    <div><h3>Filter By:</h3></div>
                     <div>
-                        <select name="PRODUCT BY:" id="">
-                           <option value="" style="width: 100%;background-color: #f2f2f2;"><p>PRODUCT BY</p></option>
-                           <option value="">3Wick Candel</option>
-                           <option value="">Candel Holder</option>
-                           <option value="">Single Wick Candel</option>
-                           <option value="button">Done</option>
+                        <select name="" id="sortprice">
+                           <option value="">sortprice</option>
+                           <option value="">high to low</option>
+                           <option value="">low to high</option>
+                           
+                           
                         </select>
                     </div>
                     <div>
-                        <select name="" id="">
-                            <option value="FRAGRANCE NAME"></option>
-                            <option value=""></option>
+                        <select name="" id="sortname">
+                            <option value="sortname">sortname</option>
+                            <option value="ascending">ascending</option>
+                            <option value="decending">decending</option>
                         </select>
                     </div>
                     <div>
-                        <select name="" id="">
-                            <option value="">Floral</option>
-                            <option value="">Fresh</option>
-                            <option value="">Fruity</option>
-                            <option value="">Sweet</option>
-                            <option value="">Woody</option>
+                        <select name="" id="priority">
+                            <option value="">select by priority</option>
+                            <option value="New Fragrance">New Fragrance</option>
+                            <option value="New!">New!</option>
+                            <option value="Online Exclusive">Online Exclusive</option>
                         </select>
                     </div>
+  
+                    <select name="" id="sortby">
+                      <option value="">Sort by</option>
+  
+                      <option value="">New Arrivals</option>
+                      <option value="">Best Sellers</option>
+                      <option value="">Price Low to High</option>
+                      <option value="">Price High to Low</option>
+                      <option value="">Top Rated</option>
+                    </select>
                 </div>
 
                 <hr>

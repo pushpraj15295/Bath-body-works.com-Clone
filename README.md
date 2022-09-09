@@ -1,6 +1,6 @@
 # Bath&Body.com - Clone
 
-
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjrLoqdYu4haeWRPTxlRxAe0UnxKbAVT6vrg&usqp=CAU" >
 
 ## Team members:
 1. Rishi Ranjan Kumar

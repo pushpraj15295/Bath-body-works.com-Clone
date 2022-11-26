@@ -17,7 +17,7 @@ The project has been completed within the duration of 5 days. Each of us had sha
 
 **Original website link**: https://www.bathandbodyworks.in/
 
-**Link of our deployed project**: https://radiant-alpaca-6dcb9c.netlify.app/
+**Link of our deployed project**: https://bath-body-works-com-clone.vercel.app/
 
 ## Tech Stack and features
 - Javascript
